@@ -4,16 +4,142 @@ body {
 
     background: #292929;
     color: white;
+
+    font-family: "Ubuntu", sans-serif;
 }
 
-#card {
+/* standard fonts */
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* custom fonts */
+
+.unbounded-header {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.jura-italic {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* main */
+
+main {
     margin-left: 50px;
+}
+
+/* card */
+
+#card {
     display: inline-block;
+
+    background-color: rgba(102, 177, 248, 0.432);
+    transition: background-color 0.3s ease;
+    
+    margin-left: 0px;
+
+    border: solid gray;
+
+    /* color: rgb(7, 5, 31); */
+    /* color: rgb(235, 216, 49); */
+}
+
+#card:hover,
+#card:focus {
+    background-color: rgba(102, 177, 248, 0.658);
+    transition: background-color 0.3s ease;
+}
+
+#card * {
+    border-color: gray;
+}
+
+#card img {
     border-style: solid;
 }
 
-#card:hover {
-    background-color: #424242;
-    animation-duration: 100ms;
-    transition: background-color 0.3s ease;
+#card hr {
+    border: 1px solid;
+}
+
+#card dt {
+    color: black;
+    margin-left: 40px;
+}
+
+/* bleed */
+
+.bleed {
+    transition: 0.15s ease;
+    text-decoration: underline;
+}
+
+.bleed:hover {
+    color: red;
+    transition: 0.15s ease; 
+}
+
+/* light up */
+
+.light-up {
+    transition: 0.15s ease;
+}
+
+.light-up:hover {
+    color: rgb(180, 141, 13);
+    transition: 0.15s ease; 
+    font-weight: bold;
 }
