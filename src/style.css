@@ -1,11 +1,15 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    background: #292929;
-    color: white;
+  background: #292929;
+  color: white;
 
-    font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+
+  background-image: url("img/texture.jpg");
+  background-size: 500px;
+  background-repeat: repeat;
 }
 
 /* standard fonts */
@@ -75,33 +79,43 @@ body {
   font-style: normal;
 }
 
+/* nav */
+
+nav {
+  background-color: #292929c7;
+  border-top: black 1px solid;
+}
+
+/* footer */
+
+footer {
+  background-color: #292929c7;
+  border-bottom: black 1px solid;
+}
+
 /* main */
 
 main {
-    margin-left: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  background-color: rgba(114, 112, 112, 0.308);
+  padding: 20px;
+
+  border: solid black;
+  border-radius: 10px;
 }
 
 /* card */
 
 #card {
     display: inline-block;
-
-    background-color: rgba(102, 177, 248, 0.432);
-    transition: background-color 0.3s ease;
     
     margin-left: 0px;
 
     border: solid gray;
-
-    /* color: rgb(7, 5, 31); */
-    /* color: rgb(235, 216, 49); */
 }
 
-#card:hover,
-#card:focus {
-    background-color: rgba(102, 177, 248, 0.658);
-    transition: background-color 0.3s ease;
-}
 
 #card * {
     border-color: gray;
@@ -120,26 +134,105 @@ main {
     margin-left: 40px;
 }
 
+/* blue light */
+#card,
+q {
+  background-color: rgba(102, 177, 248, 0.432);
+  transition: background-color 0.3s ease;
+}
+
+#card:hover,
+#card:focus,
+q:hover,
+q:focus {
+    background-color: rgba(102, 177, 248, 0.658);
+    transition: background-color 0.3s ease;
+}
+
+/* other */
+
+#other figure {
+  text-align: center;
+}
+
+#other img {
+  display: inline-block;
+  border: solid 2px black;
+}
+
+/* q */
+
+q {
+  padding: 5px;
+  border-radius: 100px;
+}
+
+q::before {
+  content: "« ";
+  color: black;
+}
+
+q::after {
+  content: " »";
+  color: black;
+}
+
+/* p */
+
+.long-text > p::first-letter {
+  font-weight: bold;
+  font-size: large;
+  color: rgb(230, 179, 11);
+}
+
+/* a */
+
+a:link {
+  color: rgb(230, 179, 11);
+}
+
+a:visited {
+  color: grey;
+}
+
+/* pre */
+
+pre.bridges {
+  display: inline-block;
+  margin: 0px;
+  width: 400px;
+}
+
+/* samp */
+
+samp {
+  font-size: large;
+  background-color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 3px;
+}
+
 /* bleed */
 
 .bleed {
-    transition: 0.15s ease;
-    text-decoration: underline;
+  transition: 0.15s ease;
+  text-decoration: underline;
 }
 
 .bleed:hover {
-    color: red;
-    transition: 0.15s ease; 
+  color: red;
+  transition: 0.15s ease; 
 }
 
 /* light up */
 
 .light-up {
-    transition: 0.15s ease;
+  transition: 0.15s ease;
 }
 
 .light-up:hover {
-    color: rgb(180, 141, 13);
-    transition: 0.15s ease; 
-    font-weight: bold;
+  color: rgb(180, 141, 13);
+  transition: 0.15s ease; 
+  font-weight: bold;
 }
