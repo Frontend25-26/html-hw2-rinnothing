@@ -1,6 +1,312 @@
-body {
-    margin: 0;
-    padding: 0;
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
-    background: #292929;
+body {
+  margin: 0;
+  padding: 0;
+
+  background: #292929;
+  color: white;
+
+  font-family: "Ubuntu", sans-serif;
+
+  background-image: url("img/texture.jpg");
+  background-size: 500px;
+  background-repeat: repeat;
+}
+
+/* standard fonts */
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ubuntu-regular-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ubuntu-bold-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* custom fonts */
+
+.unbounded-header {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.jura-italic {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* nav */
+
+nav {
+  background-color: #292929c7;
+  border-top: black 1px solid;
+}
+
+/* footer */
+
+footer {
+  background-color: #292929c7;
+  border-bottom: black 1px solid;
+}
+
+footer em {
+  color: rgb(122, 121, 121);
+}
+
+/* main */
+
+main {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  background-color: rgba(114, 112, 112, 0.308);
+  padding: 20px;
+
+  border: solid black;
+  border-radius: 10px;
+}
+
+/* card */
+
+.card {
+  display: inline-block;
+  
+  margin-left: 0px;
+
+  border: solid gray;
+}
+
+
+.card * {
+  border-color: gray;
+}
+
+.card img {
+  border-style: solid;
+  max-width: 100%;
+  height: auto;
+}
+
+.card hr {
+  border: 1px solid;
+}
+
+.card dt {
+  color: black;
+  margin-left: 40px;
+}
+
+/* blue light */
+.blue-light {
+  background-color: rgba(102, 177, 248, 0.432);
+  transition: background-color 0.3s ease;
+}
+
+.blue-light:hover,
+.blue-light:focus {
+    background-color: rgba(102, 177, 248, 0.658);
+}
+
+/* other */
+
+.other-gallery table {
+  display: block;
+  overflow-x: auto;
+}
+
+.other-gallery figure {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.other-gallery figure h3 {
+  margin-bottom: 7px;
+  color: white;
+}
+
+.other-gallery figure figcaption {
+  color: rgb(190, 186, 186);
+}
+
+.other-gallery img {
+  display: inline-block;
+  border: solid 2px black;
+
+  max-height: 100%;
+  width: auto;
+}
+
+/* q */
+
+q.make-block {
+  padding: 5px;
+  border-radius: 100px;
+  display: inline-block;
+  text-align: center;
+}
+
+q.make-block::before {
+  content: "« ";
+  color: black;
+}
+
+q.make-block::after {
+  content: " »";
+  color: black;
+}
+
+/* p */
+
+.long-text > p::first-letter {
+  font-weight: bold;
+  font-size: large;
+  color: rgb(230, 179, 11);
+}
+
+/* strong */
+
+.long-text strong {
+  color: rgb(30, 100, 165);
+}
+
+/* small */
+
+.long-text small {
+  display: inline-block;
+  text-align: center;
+  color: black;
+  background-color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.long-text small em {
+  color: rgb(30, 100, 165);
+  font-weight: bold;
+}
+
+/* a */
+
+a:link {
+  color: rgb(230, 179, 11);
+}
+
+a:visited {
+  color: grey;
+}
+
+/* pre */
+
+pre.bridges {
+  display: block;
+  margin: 0px;
+  overflow-x: auto;
+}
+
+/* samp */
+
+samp, code {
+  font-size: large;
+  background-color: black;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 3px;
+}
+
+/* bleed */
+
+.bleed {
+  transition: 0.15s ease;
+  text-decoration: underline;
+}
+
+.bleed:hover {
+  color: red;
+}
+
+/* light up */
+
+.light-up {
+  transition: 0.15s ease;
+}
+
+.light-up:hover {
+  color: rgb(180, 141, 13);
+}
+
+/* h2 */
+
+h2 {
+  color: rgb(134, 132, 126);
+}
+
+/* h4 */
+
+h4 {
+  text-decoration-line: underline;
+  text-decoration-color: black;
+  text-decoration-thickness: 3px;
+}
+
+/* short-list */
+
+ul.short-list {
+  list-style-type: none;
+  color: rgb(190, 186, 186);
+}
+
+ul.short-list li::before {
+  content: "\2014";
+  position: absolute;
+  margin-left: -20px;
 }
