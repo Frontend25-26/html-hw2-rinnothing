@@ -105,8 +105,8 @@ footer em {
 /* main */
 
 main {
-  margin-left: 50px;
-  margin-right: 50px;  
+  margin-left: 10px;
+  margin-right: 10px;
 
   background-color: rgba(114, 112, 112, 0.308);
   padding: 20px;
@@ -158,6 +158,11 @@ main {
 
 /* other */
 
+.other-gallery table {
+  display: block;
+  overflow-x: auto;
+}
+
 .other-gallery figure {
   text-align: center;
   margin-left: 5px;
@@ -183,17 +188,19 @@ main {
 
 /* q */
 
-q {
+q.make-block {
   padding: 5px;
   border-radius: 100px;
+  display: inline-block;
+  text-align: center;
 }
 
-q::before {
+q.make-block::before {
   content: "« ";
   color: black;
 }
 
-q::after {
+q.make-block::after {
   content: " »";
   color: black;
 }
@@ -239,9 +246,9 @@ a:visited {
 /* pre */
 
 pre.bridges {
-  display: inline-block;
+  display: block;
   margin: 0px;
-  width: 400px;
+  overflow-x: auto;
 }
 
 /* samp */
