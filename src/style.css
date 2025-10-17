@@ -222,6 +222,8 @@ q.make-block::after {
 /* small */
 
 .long-text small {
+  display: inline-block;
+  text-align: center;
   color: black;
   background-color: white;
   padding: 3px;
